@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-left: 240px;
+  margin-right: 240px;
+}
+
+.app-wrapper .header {
+  width: auto;
+  background: #fcdb00;
+  height: 70.4vh;
+}
+
+.app-wrapper #main-nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.app-wrapper #main-nav .logo-box {
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+
+.app-wrapper #main-nav .wrapper {
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+
+.app-wrapper #main-nav .wrapper ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+.app-wrapper #main-nav .wrapper ul:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.app-wrapper #main-nav .wrapper li {
+  float: left;
+  width: 14%;
+}
+
+.app-wrapper #main-nav .wrapper a {
+  color: #000;
+  text-decoration: none;
+  padding: 16px;
+  display: block;
+  text-align: center;
+}
+
+.app-wrapper .lead-banner {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.app-wrapper .lead-banner .lead-banner-left {
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+
+.app-wrapper .lead-banner .lead-banner-right {
+  -webkit-box-flex: 1;
+          flex: 1;
+}
+
+.app-wrapper #features {
+  width: auto;
+  background: #fff;
+  height: 70.4vh;
+}
+
+.app-wrapper #features .feature-wrapper .feature-boxes {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.app-wrapper #features .feature-wrapper .feature-boxes .box {
+  flex-basis: 33.333%;
+}
+
+.app-wrapper #footer {
+  width: auto;
+  background: #000;
+  height: 70.4vh;
+  color: #fff;
+}
+
+.app-wrapper #footer .pages {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.app-wrapper #footer .pages .page ul {
+  list-style-type: none;
+}
+

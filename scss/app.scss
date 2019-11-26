@@ -1,0 +1,100 @@
+@import "mixins";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-left:240px;
+    margin-right:240px;
+}
+
+.app-wrapper{
+   
+    .header{
+        width: auto;
+        background: #fcdb00;
+        height: 70.4vh;
+    }
+
+    #main-nav{
+
+        display: flex;
+        flex-direction: row;
+        .logo-box{
+            flex: 1;
+        }
+
+        .wrapper{
+            flex: 1;
+            ul{
+                list-style-type: none;
+                width:100%;
+                @include clearfix;
+            }
+            li{
+                float: left;
+                width: 14%;
+            }
+            a{
+                color:#000;
+                text-decoration: none;
+                padding: 16px;
+                display: block;
+                text-align:center;
+            }
+        }
+        
+    }
+
+    .lead-banner{
+        display: flex;
+        flex-direction: row;
+        .lead-banner-left{
+            flex: 1;
+        }
+        .lead-banner-right{
+            flex: 1;
+        }
+    }
+
+    #features{
+        width: auto;
+        background: #fff;
+        height: 70.4vh;
+        .feature-wrapper{ 
+            .feature-boxes{
+                display: flex;
+                flex-direction: row;
+                flex-wrap:wrap;
+                .box{
+                    flex-basis: 33.333%;
+                }
+            }
+        }
+    }
+
+    #footer{
+        width: auto;
+        background: #000;
+        height: 70.4vh;
+        color:#fff;
+
+        .pages{
+            display: flex;
+            flex-direction: row;
+            .page{
+                ul{
+                    list-style-type: none; 
+                }
+            }
+        }
+    }
+
+
+}
+
