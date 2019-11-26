@@ -11,8 +11,8 @@
 <body>
     
     <div class="app-wrapper">
-        <header class="header">
-            <nav id="main-nav">
+        <header id="header">
+            <nav class="main-nav">
                 <div class="logo-box">
                     <img src="img/logo.png" class="logo" alt="Logo" />
                     <h4 class="brandname">tinyone</h4>
@@ -27,14 +27,18 @@
             </nav>
             <div class="lead-banner">
                 <div class="lead-banner-left">
+                    
                     <h2>Inspire your inspiration</h2>
                     <h4>Simple to use for your app, products showcase and your inspiration</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. 
                     Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit 
                     </p>
-                    <i class="fab fa-apple"></i>
-                    <i class="fab fa-android"></i>
-                    <i class="fab fa-windows"></i>
+                
+                    <div class="icons">
+                        <i class="icon fab fa-apple fa-7x"></i>
+                        <i class="icon fab fa-android fa-7x"></i>
+                        <i class="icon fab fa-windows fa-7x"></i>
+                    </div>
                 </div>
                 <div class="lead-banner-right">
                     <img height="150px" width="150px" src="img/mobile.png" />
@@ -44,36 +48,38 @@
 
         <section id="features">
             <div class="feature-wrapper">
-                <h1>Tinyone features</h1>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</h3>
+                <div class="features-banner-text">
+                    <h1>Tinyone features</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</h3>
+                </div>
                 <div class="feature-boxes">
                     <div class="box">
-                        <i class="fa fa-tablet"></i>
+                        <i class="fa fa-tablet fa-5x"></i>
                         <h2>Fully Responsive</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
                     </div>
                     <div class="box">
-                        <i class="fa fa-paint-brush"></i>
+                        <i class="fa fa-paint-brush fa-5x"></i>
                         <h2>Fully Layered PSD</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
                     </div>
                     <div class="box">
-                        <i class="fa fa-lightbulb"></i>
+                        <i class="fa fa-lightbulb fa-5x"></i>
                         <h2>Font Awesome Icons</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
                     </div>
                     <div class="box">
-                        <i class="fa fa-code"></i>
+                        <i class="fa fa-code fa-5x"></i>
                         <h2>HTML3 & CSS3</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
                     </div>
                     <div class="box">
-                        <i class="fa fa-envelope"></i>
+                        <i class="fa fa-envelope fa-5x"></i>
                         <h2>Email Template</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
                     </div>
                     <div class="box">
-                        <i class="fa fa-download"></i>
+                        <i class="fa fa-download fa-5x"></i>
                         <h2>Free to download</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
                     </div>
@@ -83,11 +89,17 @@
 
         <footer id="footer">
             <div class="footer-wrapper">
-                <div class="footer-banner">
+                <div class="footer-banner-text">
                     <h2>Keep in touch with us</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
                     <input placeholder="Enter your email to update" id="email" type="email" class="footer-email-inp">
-                    <button type="button"></button>
+                    <input type="submit" value="Submit">
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i  class="fab fa-twitter"></i></a>
+                    <a href="#"><i  class="fab fa-google-plus"></i></a>
+                    <a href="#"><i  class="fab fa-pinterest"></i></a>
                 </div>
                 <div class="pages">
                     <div class="page">
@@ -101,29 +113,31 @@
                     </div>
                     <div class="page">
                         <ul>
-                            <li>HALOVIETNAM LTD</li>
-                            <li>66, Dang Van ngu, Dong Da</li>
-                            <li>Hanoi, Vietnam</li>
-                            <li>contact@halovietnam.com</li>
-                            <li>+844 35149182</li>
+                            <li>Examples</li>
+                            <li>Shop</li>
+                            <li>License</li>
                         </ul>
                     </div>
                     <div class="page">
                         <ul>
-                            <li>HALOVIETNAM LTD</li>
-                            <li>66, Dang Van ngu, Dong Da</li>
-                            <li>Hanoi, Vietnam</li>
-                            <li>contact@halovietnam.com</li>
-                            <li>+844 35149182</li>
+                            <li>Contact</li>
+                            <li>About</li>
+                            <li>Privacy</li>
+                            <li>Terms</li>
                         </ul>
                     </div>
                     <div class="page">
                         <ul>
-                            <li>HALOVIETNAM LTD</li>
-                            <li>66, Dang Van ngu, Dong Da</li>
-                            <li>Hanoi, Vietnam</li>
-                            <li>contact@halovietnam.com</li>
-                            <li>+844 35149182</li>
+                            <li>Download</li>
+                            <li>Support</li>
+                            <li>Documents</li>
+                        </ul>
+                    </div>
+                    <div class="page">
+                        <ul>
+                            <li>Media</li>
+                            <li>Blog</li>
+                            <li>Forums</li>
                         </ul>
                     </div>
                 </div>

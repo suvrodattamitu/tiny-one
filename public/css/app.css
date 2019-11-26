@@ -12,13 +12,25 @@ body {
   margin-right: 240px;
 }
 
-.app-wrapper .header {
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.app-wrapper {
+  /* 1.header section */
+  /* 2.features section */
+  /* 3.footer section */
+}
+
+.app-wrapper #header {
   width: auto;
   background: #fcdb00;
   height: 70.4vh;
 }
 
-.app-wrapper #main-nav {
+.app-wrapper #header .main-nav {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -26,33 +38,44 @@ body {
           flex-direction: row;
 }
 
-.app-wrapper #main-nav .logo-box {
+.app-wrapper #header .main-nav .logo-box {
   -webkit-box-flex: 1;
           flex: 1;
 }
 
-.app-wrapper #main-nav .wrapper {
+.app-wrapper #header .main-nav .logo-box .logo {
+  display: inline-block;
+}
+
+.app-wrapper #header .main-nav .logo-box .brandname {
+  display: inline-block;
+  text-align: center;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+
+.app-wrapper #header .main-nav .wrapper {
   -webkit-box-flex: 1;
           flex: 1;
 }
 
-.app-wrapper #main-nav .wrapper ul {
+.app-wrapper #header .main-nav .wrapper ul {
   list-style-type: none;
   width: 100%;
 }
 
-.app-wrapper #main-nav .wrapper ul:after {
+.app-wrapper #header .main-nav .wrapper ul:after {
   clear: both;
   display: block;
   content: "";
 }
 
-.app-wrapper #main-nav .wrapper li {
+.app-wrapper #header .main-nav .wrapper li {
   float: left;
   width: 14%;
 }
 
-.app-wrapper #main-nav .wrapper a {
+.app-wrapper #header .main-nav .wrapper a {
   color: #000;
   text-decoration: none;
   padding: 16px;
@@ -60,7 +83,7 @@ body {
   text-align: center;
 }
 
-.app-wrapper .lead-banner {
+.app-wrapper #header .lead-banner {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -68,12 +91,12 @@ body {
           flex-direction: row;
 }
 
-.app-wrapper .lead-banner .lead-banner-left {
+.app-wrapper #header .lead-banner .lead-banner-left {
   -webkit-box-flex: 1;
           flex: 1;
 }
 
-.app-wrapper .lead-banner .lead-banner-right {
+.app-wrapper #header .lead-banner .lead-banner-right {
   -webkit-box-flex: 1;
           flex: 1;
 }
@@ -82,6 +105,10 @@ body {
   width: auto;
   background: #fff;
   height: 70.4vh;
+}
+
+.app-wrapper #features .feature-wrapper .banner-text {
+  text-align: center;
 }
 
 .app-wrapper #features .feature-wrapper .feature-boxes {
@@ -104,6 +131,25 @@ body {
   color: #fff;
 }
 
+.app-wrapper #footer .footer-banner-text {
+  text-align: center;
+}
+
+.app-wrapper #footer .socials {
+  text-align: center;
+  color: #fff;
+}
+
+.app-wrapper #footer .socials a {
+  color: #000;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-decoration: none;
+  margin: 5px 2px;
+  background-color: #fcdb00;
+}
+
 .app-wrapper #footer .pages {
   display: -webkit-box;
   display: flex;
@@ -112,7 +158,13 @@ body {
           flex-direction: row;
 }
 
+.app-wrapper #footer .pages .page {
+  flex-basis: 20%;
+}
+
 .app-wrapper #footer .pages .page ul {
   list-style-type: none;
 }
+
+/* media queries for responsive design */
 
