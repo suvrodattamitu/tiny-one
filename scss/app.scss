@@ -8,6 +8,7 @@
 body{
     max-width: 940px;
     margin:0 auto;
+    font-family: 'Open Sans', sans-serif;
 }
 
 input{
@@ -147,6 +148,10 @@ input{
                     }
                     .content{
                         padding:0px 5px 30px 5px;
+                        p{
+                            color:#898989;
+                            padding-top:8px;
+                        }
                     }
 
                 }
@@ -159,7 +164,7 @@ input{
 
         width: auto;
         background: #000;
-        color:#fff;
+        color:#898989;
         overflow: hidden;
 
         .footer-banner-text{
@@ -172,17 +177,24 @@ input{
             }
             h2{
                 color:#fcdb00;
+                padding-bottom: 20px;
             }
-            .btn{
-                background: #fcdb00;
-                color:#000;
-                border-radius: 8px;
-                width:130px;
-                margin-left: 15px;
+            p{
+                padding-bottom: 20px; 
             }
-            .footer-email-inp{
-                width:390px;
-                border-radius: 8px;
+
+            .footer-btn-area{
+                .btn{
+                    background: #fcdb00;
+                    color:#000;
+                    border-radius: 8px;
+                    width:130px;
+                    margin-left: 15px;
+                }
+                .footer-email-inp{
+                    width:390px;
+                    border-radius: 8px;
+                }
             }
             
         }

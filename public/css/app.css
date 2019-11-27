@@ -7,6 +7,7 @@
 body {
   max-width: 940px;
   margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
 input {
@@ -197,10 +198,15 @@ input {
   padding: 0px 5px 30px 5px;
 }
 
+.app-wrapper #features .feature-wrapper .feature-boxes .box .content p {
+  color: #898989;
+  padding-top: 8px;
+}
+
 .app-wrapper #footer {
   width: auto;
   background: #000;
-  color: #fff;
+  color: #898989;
   overflow: hidden;
 }
 
@@ -217,9 +223,14 @@ input {
 
 .app-wrapper #footer .footer-banner-text h2 {
   color: #fcdb00;
+  padding-bottom: 20px;
 }
 
-.app-wrapper #footer .footer-banner-text .btn {
+.app-wrapper #footer .footer-banner-text p {
+  padding-bottom: 20px;
+}
+
+.app-wrapper #footer .footer-banner-text .footer-btn-area .btn {
   background: #fcdb00;
   color: #000;
   border-radius: 8px;
@@ -227,7 +238,7 @@ input {
   margin-left: 15px;
 }
 
-.app-wrapper #footer .footer-banner-text .footer-email-inp {
+.app-wrapper #footer .footer-banner-text .footer-btn-area .footer-email-inp {
   width: 390px;
   border-radius: 8px;
 }
