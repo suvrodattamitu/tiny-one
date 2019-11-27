@@ -6,11 +6,8 @@
 }
 
 body{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.7;
-    margin-left:240px;
-    margin-right:240px;
+    max-width: 940px;
+    margin:0 auto;
 }
 
 input{
@@ -26,13 +23,19 @@ input{
         width: auto;
         background: #fcdb00;
         height: 70.4vh;
+
         .main-nav{
 
             display: flex;
             flex-direction: row;
+            align-content: center;
+            align-items: center;
+            max-width:930px;
+            margin:0 auto;
+            padding:50px 90px;
             .logo-box{
                 flex: 1;
-                
+                padding-left: 10px;
                 .logo{
                     display: inline-block; 
                 }
@@ -52,7 +55,9 @@ input{
                 }
                 li{
                     float: left;
-                    width: 14%;
+                   // width: 14%;
+                   flex-basis: 20%;
+                    @include clearfix;
                 }
                 a{
                     color:#000;
@@ -60,19 +65,44 @@ input{
                     padding: 16px;
                     display: block;
                     text-align:center;
+                    @include clearfix;
                 }
-            }
-            
+            } 
         }
     
         .lead-banner{
             display: flex;
             flex-direction: row;
+            max-width: 900px;
+            margin: 0 auto;
+            justify-content: center;
+            justify-items: center;
+            padding:0px 90px;
             .lead-banner-left{
                 flex: 1;
+                h2{
+                    padding-bottom: 25px;
+                }
+                h4{
+                    padding-bottom: 25px;
+                }
+                p{
+                    padding-bottom: 25px;
+                }
+
+                .icons{
+                    .icon{
+                        padding-right: 10px;
+                    }
+                }
             }
             .lead-banner-right{
                 flex: 1;
+                .lead-banner-image{
+                    width:310px;
+                    height:auto;
+                    margin-left:25px;
+                }
             }
         }
     }
@@ -84,15 +114,35 @@ input{
         background: #fff;
         height: 70.4vh;
         .feature-wrapper{ 
-            .banner-text{
+            .features-banner-text{
                 text-align: center;
+                padding-top: 120px;
+                max-width: 710px;
+                margin:0 auto;
+                padding-bottom: 90px;
+
+                h1{
+                    padding-bottom: 10px;
+                }
             }
             .feature-boxes{
                 display: flex;
                 flex-direction: row;
                 flex-wrap:wrap;
+                padding:0px 50px;
                 .box{
                     flex-basis: 33.333%;
+                    
+                    .icon{
+                        float: left;
+                        height:100%;
+                        width:50px;
+                        display: block;
+                    }
+                    .content{
+                        padding:0px 5px 30px 5px;
+                    }
+
                 }
             }
         }
@@ -100,30 +150,60 @@ input{
 
     /* 3.footer section */
     #footer{
+
         width: auto;
         background: #000;
-        height: 70.4vh;
+        height: 78.4vh;
         color:#fff;
 
         .footer-banner-text{
             text-align:center;
+            padding-top: 95px;
+            max-width:716px;
+            margin:0 auto;
+            .footer-header{
+                padding-bottom: 15px;
+            }
+            h2{
+                color:#fcdb00;
+            }
+            .btn{
+                background: #fcdb00;
+                color:#000;
+                border-radius: 8px;
+                width:130px;
+                margin-left: 15px;
+            }
+            .footer-email-inp{
+                width:390px;
+                border-radius: 8px;
+            }
+            
         }
+        
         .socials{
+            padding-top: 60px;
             text-align: center;
             color:#fff;
             a{
                 color:#000;
-                padding: 20px;
+                padding: 7px;
                 font-size: 30px;
-                width: 50px;
+                //width: 50px;
                 text-decoration: none;
                 margin: 5px 2px;
                 background-color: #fcdb00;
+                border-radius: 8px;
             }         
         }
+        
         .pages{
+            padding-top: 60px;
             display: flex;
             flex-direction: row;
+            max-width: 840px;
+            margin: 0 auto;
+            transform: translateX(60px);
             .page{
                 flex-basis:20%;
                 ul{
@@ -132,7 +212,6 @@ input{
             }
         }
     }
-
 }
 
 /* media queries for responsive design */

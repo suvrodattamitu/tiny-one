@@ -5,11 +5,8 @@
 }
 
 body {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  margin-left: 240px;
-  margin-right: 240px;
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 input {
@@ -36,11 +33,18 @@ input {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
+  align-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 50px 90px;
 }
 
 .app-wrapper #header .main-nav .logo-box {
   -webkit-box-flex: 1;
           flex: 1;
+  padding-left: 10px;
 }
 
 .app-wrapper #header .main-nav .logo-box .logo {
@@ -72,7 +76,13 @@ input {
 
 .app-wrapper #header .main-nav .wrapper li {
   float: left;
-  width: 14%;
+  flex-basis: 20%;
+}
+
+.app-wrapper #header .main-nav .wrapper li:after {
+  clear: both;
+  display: block;
+  content: "";
 }
 
 .app-wrapper #header .main-nav .wrapper a {
@@ -83,12 +93,24 @@ input {
   text-align: center;
 }
 
+.app-wrapper #header .main-nav .wrapper a:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
 .app-wrapper #header .lead-banner {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
+  max-width: 900px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+          justify-content: center;
+  justify-items: center;
+  padding: 0px 90px;
 }
 
 .app-wrapper #header .lead-banner .lead-banner-left {
@@ -96,9 +118,31 @@ input {
           flex: 1;
 }
 
+.app-wrapper #header .lead-banner .lead-banner-left h2 {
+  padding-bottom: 25px;
+}
+
+.app-wrapper #header .lead-banner .lead-banner-left h4 {
+  padding-bottom: 25px;
+}
+
+.app-wrapper #header .lead-banner .lead-banner-left p {
+  padding-bottom: 25px;
+}
+
+.app-wrapper #header .lead-banner .lead-banner-left .icons .icon {
+  padding-right: 10px;
+}
+
 .app-wrapper #header .lead-banner .lead-banner-right {
   -webkit-box-flex: 1;
           flex: 1;
+}
+
+.app-wrapper #header .lead-banner .lead-banner-right .lead-banner-image {
+  width: 310px;
+  height: auto;
+  margin-left: 25px;
 }
 
 .app-wrapper #features {
@@ -107,8 +151,16 @@ input {
   height: 70.4vh;
 }
 
-.app-wrapper #features .feature-wrapper .banner-text {
+.app-wrapper #features .feature-wrapper .features-banner-text {
   text-align: center;
+  padding-top: 120px;
+  max-width: 710px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+.app-wrapper #features .feature-wrapper .features-banner-text h1 {
+  padding-bottom: 10px;
 }
 
 .app-wrapper #features .feature-wrapper .feature-boxes {
@@ -118,44 +170,86 @@ input {
   -webkit-box-direction: normal;
           flex-direction: row;
   flex-wrap: wrap;
+  padding: 0px 50px;
 }
 
 .app-wrapper #features .feature-wrapper .feature-boxes .box {
   flex-basis: 33.333%;
 }
 
+.app-wrapper #features .feature-wrapper .feature-boxes .box .icon {
+  float: left;
+  height: 100%;
+  width: 50px;
+  display: block;
+}
+
+.app-wrapper #features .feature-wrapper .feature-boxes .box .content {
+  padding: 0px 5px 30px 5px;
+}
+
 .app-wrapper #footer {
   width: auto;
   background: #000;
-  height: 70.4vh;
+  height: 78.4vh;
   color: #fff;
 }
 
 .app-wrapper #footer .footer-banner-text {
   text-align: center;
+  padding-top: 95px;
+  max-width: 716px;
+  margin: 0 auto;
+}
+
+.app-wrapper #footer .footer-banner-text .footer-header {
+  padding-bottom: 15px;
+}
+
+.app-wrapper #footer .footer-banner-text h2 {
+  color: #fcdb00;
+}
+
+.app-wrapper #footer .footer-banner-text .btn {
+  background: #fcdb00;
+  color: #000;
+  border-radius: 8px;
+  width: 130px;
+  margin-left: 15px;
+}
+
+.app-wrapper #footer .footer-banner-text .footer-email-inp {
+  width: 390px;
+  border-radius: 8px;
 }
 
 .app-wrapper #footer .socials {
+  padding-top: 60px;
   text-align: center;
   color: #fff;
 }
 
 .app-wrapper #footer .socials a {
   color: #000;
-  padding: 20px;
+  padding: 7px;
   font-size: 30px;
-  width: 50px;
   text-decoration: none;
   margin: 5px 2px;
   background-color: #fcdb00;
+  border-radius: 8px;
 }
 
 .app-wrapper #footer .pages {
+  padding-top: 60px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
+  max-width: 840px;
+  margin: 0 auto;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
 }
 
 .app-wrapper #footer .pages .page {
