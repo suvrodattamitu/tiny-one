@@ -203,14 +203,17 @@ input {
 
 .app-wrapper #footer .footer-banner-text p {
   padding-bottom: 20px;
+  font-size: 12px;
 }
 
 .app-wrapper #footer .footer-banner-text .footer-btn-area .btn {
   background: #fcdb00;
   color: #000;
-  border-radius: 8px;
+  border-radius: 6px;
   width: 130px;
   margin-left: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .app-wrapper #footer .footer-banner-text .footer-btn-area .footer-email-inp {
@@ -225,9 +228,12 @@ input {
 }
 
 .app-wrapper #footer .socials a {
+  -webkit-transform: translate(-50%, -48%);
+          transform: translate(-50%, -48%);
   color: #000;
   padding: 7px;
-  font-size: 30px;
+  font-size: 15px;
+  width: 50px;
   text-decoration: none;
   margin: 5px 2px;
   background-color: #fcdb00;
@@ -254,6 +260,8 @@ input {
 
 .app-wrapper #footer .pages .page ul {
   list-style-type: none;
+  padding-left: 50px;
+  font-size: 13px;
 }
 
 @media screen and (max-width: 800px) {
@@ -412,7 +420,7 @@ input {
     -webkit-box-direction: normal;
             flex-direction: row;
     flex-wrap: wrap;
-    padding: 0px 50px;
+    padding: 0px 10% !important;
   }
 
   #features .feature-wrapper .feature-boxes .box {

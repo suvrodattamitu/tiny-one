@@ -204,15 +204,18 @@ input{
             }
             p{
                 padding-bottom: 20px; 
+                font-size: 12px;
             }
 
             .footer-btn-area{
                 .btn{
                     background: #fcdb00;
                     color:#000;
-                    border-radius: 8px;
+                    border-radius: 6px;
                     width:130px;
                     margin-left: 15px;
+                    font-weight: bold;
+                    text-transform: uppercase;
                 }
                 .footer-email-inp{
                     width:390px;
@@ -226,11 +229,13 @@ input{
             padding-top: 60px;
             text-align: center;
             color:#fff;
+            
             a{
+                transform: translate(-50%,-48%);
                 color:#000;
                 padding: 7px;
-                font-size: 30px;
-                //width: 50px;
+                font-size: 15px;
+                width: 50px;
                 text-decoration: none;
                 margin: 5px 2px;
                 background-color: #fcdb00;
@@ -249,8 +254,11 @@ input{
             
             .page{
                 flex-basis:20%;
+                
                 ul{
                     list-style-type: none; 
+                    padding-left: 50px;
+                    font-size: 13px;
                 }
             }
         }
@@ -374,7 +382,7 @@ input{
                 display: flex;
                 flex-direction: row;
                 flex-wrap:wrap;
-                padding:0px 50px;
+                padding:0px 10% !important;
                 .box{
                     flex-basis: 100% !important;
                     
@@ -412,13 +420,6 @@ input{
     }
 
 }
-
-
-// body {
-//     margin: 0;
-//     font-family: Helvetica, sans-serif;
-//     background-color: #f4f4f4;
-//   }
   
   a {
     color: #000;
